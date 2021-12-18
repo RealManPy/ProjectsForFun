@@ -1,1 +1,1 @@
-# ProjectsForFun
+# RGB to hexadecimal
