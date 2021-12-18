@@ -1,0 +1,155 @@
+from time import sleep
+import turtle
+import math
+
+sleep(0)
+redd = int(input("Red: "))
+greenn = int(input("Green: "))
+bluee = int(input("Blue: "))
+
+red = redd/16
+green = greenn/16
+blue = bluee/16
+
+red1 = math.floor(red)
+red2 = red - red1
+
+green1 = math.floor(green)
+green2 = green - green1
+
+blue1 = math.floor(blue)
+blue2 = blue - blue1
+
+redf1 = red1
+redf2 = red2 * 16
+redf2 = math.floor(redf2)
+
+greenf1 = green1
+greenf2 = green2 * 16
+greenf2 = math.floor(greenf2)
+
+bluef1 = blue1
+bluef2 = blue2 * 16
+bluef2 = math.floor(bluef2)
+
+
+if redf1 == 10:
+    redf1 = "a"
+
+if redf1 == 11:
+    redf1 = "b"
+
+if redf1 == 12:
+    redf1 = "c"
+
+if redf1 == 13:
+    redf1 = "d"
+
+if redf1 == 14:
+    redf1 = "e"
+
+if redf1 == 15:
+    redf1 = "f"
+
+if redf2 == 10:
+    redf2 = "a"
+
+if redf2 == 11:
+    redf2 = "b"
+
+if redf2 == 12:
+    redf2 = "c"
+
+if redf2 == 13:
+    redf2 = "d"
+
+if redf2 == 14:
+    redf2 = "e"
+
+if redf2 == 15:
+    redf2 = "f"
+
+
+if greenf1 == 10:
+    greenf1 = "a"
+
+if greenf1 == 11:
+    greenf1 = "b"
+
+if greenf1 == 12:
+    greenf1 = "c"
+
+if greenf1 == 13:
+    greenf1 = "d"
+
+if greenf1 == 14:
+    greenf1 = "e"
+
+if greenf1 == 15:
+    greenf1 = "f"
+
+if greenf2 == 10:
+    greenf2 = "a"
+
+if greenf2 == 11:
+    greenf2 = "b"
+
+if greenf2 == 12:
+    greenf2 = "c"
+
+if greenf2 == 13:
+    greenf2 = "d"
+
+if greenf2 == 14:
+    greenf2 = "e"
+
+if greenf2 == 15:
+    greenf2 = "f"
+
+
+
+if bluef1 == 10:
+    bluef1 = "a"
+
+if bluef1 == 11:
+    bluef1 = "b"
+
+if bluef1 == 12:
+    bluef1 = "c"
+
+if bluef1 == 13:
+    bluef1 = "d"
+
+if bluef1 == 14:
+    bluef1 = "e"
+
+if bluef1 == 15:
+    bluef1 = "f"
+
+if bluef2 == 10:
+    bluef2 = "a"
+
+if bluef2 == 11:
+    bluef2 = "b"
+
+if bluef2 == 12:
+    bluef2 = "c"
+
+if bluef2 == 13:
+    bluef2 = "d"
+
+if bluef2 == 14:
+    bluef2 = "e"
+
+if bluef2 == 15:
+    bluef2 = "f"
+
+print("Red=", redd, "\nGreen=", greenn, "\nBlue=", bluee,"\nHexadecimal: ", "#",redf1,redf2, greenf1, greenf2, bluef1, bluef2,  sep='')
+a = f"#{redf1}{redf2}{greenf1}{greenf2}{bluef1}{bluef2}"
+
+wn = turtle.Screen()
+wn.title("---color---")
+wn.bgcolor(a)
+
+while True:
+    wn.update()
